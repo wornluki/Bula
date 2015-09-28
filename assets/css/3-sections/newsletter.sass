@@ -1,0 +1,50 @@
+$darken-red-color: darken($red-color, 15%)
+
+section.news
+	.flex
+		flex-direction: column
+		width: 60vw
+
+	.mail-box
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		margin-top: 50px
+
+
+h2.lead
+	color: black
+
+h4
+	color: black
+	padding: 0
+	margin: 0
+	text-align: center
+
+input
+	width: 70%
+	margin-right: 20px
+	height: 50px
+	border: 1px solid $red-color
+	border-radius: 8px
+	padding: 0px 10px 0 10px
+	+transition(border 100ms ease-in-out)
+	&:focus
+		outline: none
+		border: 1px solid $darken-red-color
+		+transition(border 100ms ease-in-out)
+
+button
+	width: 20%
+	height: 50px
+	//float: right
+	background-color: $red-color
+	border: 1px solid $red-color
+	border-radius: 8px
+	color: white
+	+transition(all 150ms ease-in-out)
+
+	&:hover
+		background-color: $darken-red-color
+		border: 1px solid $darken-red-color
+		+transition(all 150ms ease-in-out)
