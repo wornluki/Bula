@@ -13,9 +13,7 @@ $(window).scroll(function(){
 
 $('#buly').click(function(){
   $('.bula_menu').toggleClass('toggle');
-  $('.bula_menu').toggleClass('toggle_position_bula');
   $('.bula_menu').siblings().removeClass('toggle');
-  $('.bula_menu').siblings().removeClass('toggle_position_bula');
 });
 
 $('#salatki').click(function(){

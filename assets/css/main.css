@@ -503,7 +503,9 @@ li a.list {
   padding: 0px 2px 5px 2px;
   border-bottom: 1px solid rgba(255, 255, 255, 0);
   -webkit-transition: border-bottom 0.2s ease-in-out;
-  transition: border-bottom 0.2s ease-in-out; }
+  transition: border-bottom 0.2s ease-in-out;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility; }
   li a.list:hover {
     border-bottom: 1px solid #1C1A1D;
     -webkit-transition: border-bottom 0.2s ease-in-out;
@@ -562,11 +564,18 @@ section.carousel {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-transition: background-position 200ms ease-in-out;
-    transition: background-position 200ms ease-in-out;
+    -webkit-transition: all 200ms ease-in-out;
+            transition: all 200ms ease-in-out;
     -webkit-tap-highlight-color: transparent; }
     section.carousel li.offer:hover {
-      background-position: 0% 40%; }
+      background-position: 45%; }
+    @media screen and (max-width: 640px) {
+      section.carousel li.offer {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
   section.carousel p.title {
     color: #fff;
     font-size: 3.5vw;
