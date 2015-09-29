@@ -604,11 +604,11 @@ section.menu {
   position: relative; }
   section.menu .list {
     padding: 0;
+    margin: 0;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    margin: 0;
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
             justify-content: space-around;
@@ -620,7 +620,6 @@ section.menu {
             transform-origin: top;
     width: 100%;
     position: absolute;
-    opacity: 0;
     -webkit-transition: all 200ms ease-in-out;
     transition: all 200ms ease-in-out; }
     section.menu .list.bula_menu {
@@ -635,7 +634,7 @@ section.menu {
       -webkit-transform: scaleY(1);
           -ms-transform: scaleY(1);
               transform: scaleY(1);
-      opacity: 1; }
+      position: relative; }
   section.menu ul {
     margin: 0;
     padding: 0; }

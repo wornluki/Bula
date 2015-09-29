@@ -8,20 +8,22 @@ section.menu
 
 	.list
 		padding: 0
-		display: flex
 		margin: 0
+		display: flex
 		//transform: translateY(100px)
 		justify-content: space-around
 		transform: scaleY(0)
 		transform-origin: top
 		width: 100%
 		position: absolute
-		opacity: 0
+		//opacity: 0
 		+transition(all 200ms ease-in-out)
 
 		&.bula_menu
-			background-color: $red-color 		
-			
+			background-color: $red-color
+			// &.toggle_position_bula
+			// 	position: relative
+
 		&.salatki_menu
 			background-color: $blue-color
 
@@ -33,7 +35,8 @@ section.menu
 
 		&.toggle
 			transform: scaleY(1)
-			opacity: 1
+			position: relative
+			//opacity: 1
 
 	ul
 		margin: 0

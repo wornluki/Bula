@@ -13,14 +13,14 @@ $(window).scroll(function(){
 
 $('#buly').click(function(){
   $('.bula_menu').toggleClass('toggle');
-  $('.bula_menu').siblings().removeClass('toggle')
-  // var h = $('.bula_menu').height();
-  // get_height(h);
+  $('.bula_menu').toggleClass('toggle_position_bula');
+  $('.bula_menu').siblings().removeClass('toggle');
+  $('.bula_menu').siblings().removeClass('toggle_position_bula');
 });
 
 $('#salatki').click(function(){
-  $('.salatki_menu').toggleClass('toggle')
-  $('.salatki_menu').siblings().removeClass('toggle')
+  $('.salatki_menu').toggleClass('toggle');
+  $('.salatki_menu').siblings().removeClass('toggle');
 });
 
 $('#zapiekanki').click(function(){
@@ -57,10 +57,10 @@ function header_collapse() {
       // $('header').css("height", "50px");
       // $('.nav').css("font-size", "18px");
 
-      $('header').addClass('collapse');    
+      $('header').addClass('collapse');
     }
     else {
-      //$('header').stop().animate({height: "100px"},200);  
+      //$('header').stop().animate({height: "100px"},200);
 
       // $('header').css("height", "100px");
       // $('.nav').css("font-size", "20px");
