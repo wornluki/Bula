@@ -3,14 +3,16 @@ header
   width: 100%
   position: fixed
   z-index: 999
-  height: 100px
+  //height: 100px
   background: rgba(#FFF, 0.95)
-  margin 0px
-  padding 0px
-  +transition(height 300ms $ease-in-out-expo, background 500ms ease-in-out)
+  margin: 0px
+  padding: 1rem 0.5rem
+  //+transition(padding 300ms $ease-in-out-expo, background 500ms ease-in-out)
 
   &.collapse
-    transform: scaleY(0.5) translateY(-50%)
+    //transform: scaleY(0.5) translateY(-50%)
+    padding: 0.01rem 0.5rem
+    //+transition(padding 300ms $ease-in-out-expo)
   // $ease-in-out-quint
 
 
@@ -50,7 +52,7 @@ img.logo
         repeat: no-repeat
         position: center
         size: contain
-  max-height: 60px
+  height: 60px
 
 // @media (max-width: 678px) {
 
