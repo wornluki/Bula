@@ -463,14 +463,14 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
 
-header {
+section.header {
   width: 100%;
   position: fixed;
   z-index: 999;
   background: rgba(255, 255, 255, 0.95);
-  margin: 0px;
+  margin-top: 0;
   padding: 1rem 0.5rem; }
-  header.collapse {
+  section.header.collapse {
     padding: 0.01rem 0.5rem; }
 
 ul.nav {
@@ -516,7 +516,7 @@ img.logo {
   height: 60px; }
 
 section.carousel {
-  margin: 0;
+  box-sizing: border-box;
   max-width: 100%;
   padding: 0;
   z-index: 2;
