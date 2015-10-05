@@ -1,6 +1,6 @@
 $(window).scroll(function(){
   header_collapse();
-  //pic_scroll();
+  pic_scroll();
 });
 
 $(function() {
@@ -19,31 +19,34 @@ $(function() {
 });
 
 $('#buly').click(function(){
-  $('.bula_menu').toggleClass('toggle');
-  $('.bula_menu').siblings().removeClass('toggle');
+  $('.bula_menu')
+    .toggleClass('toggle')
+    .siblings().removeClass('toggle');
 });
 
 $('#salatki').click(function(){
-  $('.salatki_menu').toggleClass('toggle');
-  $('.salatki_menu').siblings().removeClass('toggle');
+  $('.salatki_menu')
+    .toggleClass('toggle')
+    .siblings().removeClass('toggle');
 });
 
 $('#zapiekanki').click(function(){
-  $('.zapiekanki_menu').toggleClass('toggle')
-  $('.zapiekanki_menu').siblings().removeClass('toggle')
+  $('.zapiekanki_menu')
+    .toggleClass('toggle')
+    .siblings().removeClass('toggle')
 });
 
 $('#napoje').click(function(){
-  $('.napoje_menu').toggleClass('toggle')
-  $('.napoje_menu').siblings().removeClass('toggle')
+  $('.napoje_menu')
+    .toggleClass('toggle')
+    .siblings().removeClass('toggle')
 });
 
 function pic_scroll() {
-
   var wScroll = $(window).scrollTop();
   wScroll = wScroll * 0.15
 
-  $('.picture').css('transform','translateY('+ wScroll +')');
+  $('.picture').css('background-position','center -'+ wScroll +'px')
 };
 
 
