@@ -1,6 +1,6 @@
 $(window).scroll(function(){
   header_collapse();
-  pic_scroll();
+  //pic_scroll();
 });
 
 $(function() {
