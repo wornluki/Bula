@@ -697,8 +697,8 @@ section.about {
     background-position: center top;
     background-size: auto 160%;
     background-repeat: no-repeat;
-    height: 25vw;
-    width: 25vw;
+    height: 30vw;
+    width: 30vw;
     border-radius: 50%; }
   section.about .about_text {
     font-size: 1.8em;
