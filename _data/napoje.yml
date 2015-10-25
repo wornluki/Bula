@@ -1,0 +1,11 @@
+- name: Kawa czarna
+  price: 5zł
+
+- name: Kawa z mlekiem
+  price: 7zł
+
+- name: Kompot
+  price: 2zł
+
+- name: Cola, Fanta, Sprite
+  price: 5zł

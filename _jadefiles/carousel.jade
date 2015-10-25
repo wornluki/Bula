@@ -9,38 +9,20 @@ section.carousel#oferta
 			p.title Zapiekanki
 		li.offer#napoje.overlay.purple(style="background-image: url(/assets/img/coffe.jpg)")
 			p.title Napoje
-
+			
 	section.menu
 		.list.bula_menu
 			.col-2
 				h2 Buły dnia
 				//h4.price (Każda buła 13 ,–)
-				ul
+				ul 
+					{% for buly in site.data.buly %}
 					li.product
 						h4 Poniedziałek
-						h3 Bigoska
-						h5.small bigos, ser, papryczka chilli, pikle, sos paprykowy
-					li.product
-						h4 Poniedziałek
-						h3 Bigoska
-						h5.small bigos, ser, papryczka chilli, pikle, sos paprykowy
-					li.product
-						h4 Poniedziałek
-						h3 Bigoska
-						h5.small bigos, ser, papryczka chilli, pikle, sos paprykowy
-					li.product
-						h4 Poniedziałek
-						h3 Bigoska
-						h5.small bigos, ser, papryczka chilli, pikle, sos paprykowy
-					li.product
-						h4 Poniedziałek
-						h3 Bigoska
-						h5.small bigos, ser, papryczka chilli, pikle, sos paprykowy
-					li.product
-						h4 Poniedziałek
-						h3 Bigoska
-						h5.small bigos, ser, papryczka chilli, pikle, sos paprykowy
-
+						h3 {{ buly.name }}
+						h5.small {{ buly.ing }}
+					{% endfor %}
+					
 			.col-2
 				h2 Buły
 				ul
@@ -53,43 +35,27 @@ section.carousel#oferta
 				h2 Sałatki
 				h4.price (Każda salatka 10 zł)
 				ul
+					{% for salatka in site.data.salatki %}
 					li.product
-						h3 Kurczak
-					li.product
-						h3 Tuńczyk
-					li.product
-						h3 Feta
+						h3 {{ salatka.name }}
+					{% endfor %}
 
 		.list.zapiekanki_menu
 			.col-1
 				h2 Zapiekanki
 				h4.price (Każda zapiekanka 7 zł)
 				ul
+					{% for zapiekanka in site.data.zapiekanki %}
 					li.product
-						h3 Salamandra
-						h5.small bigos, ser, papryczka chilli, pikle, sos paprykowy
-					li.product
-						h3 Kurczaczek
-						h5.small bigos, ser, papryczka chilli, pikle, sos paprykowy
-					li.product
-						h3 Szynkowa
-						h5.small bigos, ser, papryczka chilli, pikle, sos paprykowy
-					li.product
-						h3 Oscypka
-						h5.small bigos, ser, papryczka chilli, pikle, sos paprykowy
+						h3 {{zapiekanka.name}}
+						h5.small {{zapiekanka.ing}}
+					{% endfor %}
 
 		.list.napoje_menu
 			.col-1
 				h2 Napoje
 				ul
+					{% for napoj in site.data.napoje %}
 					li.product
-						h3 Kawa czarna - 5zł
-					li.product
-						h3 Kawa z mlekiem - 7zł
-					li.product
-						h3 Kompot - 2zł
-					li.product
-						h3 Cola, Fanta, Sprite 5zł
-						h5.small (0.5L)
-
-
+						h3 {{ napoj.name }} - {{ napoj.price }}
+					{% endfor %}
