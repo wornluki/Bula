@@ -1,4 +1,4 @@
-name: Travis Neilson
+name: Lukas Turczyn
 markdown: redcarpet
 exclude: ["node_modules",
   "gulpfile.js",

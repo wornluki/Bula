@@ -16,6 +16,9 @@ section.carousel
 		align-items: center
 		width: 100%
 
+		@media screen and (max-width: 640px)
+			flex-direction: column
+
 	li.offer
 		background-position: center
 		background-size: cover
@@ -23,6 +26,7 @@ section.carousel
 		padding: 10vh 0 10vh 0
 		flex: 1
 		display: flex
+		width: 100vw
 		justify-content: center
 		align-items: center
 		transition: all 200ms ease-in-out
@@ -31,8 +35,7 @@ section.carousel
 		&:hover
 			background-position: 45%
 
-		@media screen and (max-width: 640px)
-			flex-direction: column
+
 
 	p.title
 		color: #fff

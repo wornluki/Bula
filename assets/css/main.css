@@ -541,6 +541,13 @@ section.carousel {
         -ms-flex-align: center;
             align-items: center;
     width: 100%; }
+    @media screen and (max-width: 640px) {
+      section.carousel ul.offers {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
   section.carousel li.offer {
     background-position: center;
     background-size: cover;
@@ -553,6 +560,7 @@ section.carousel {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    width: 100vw;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
@@ -566,13 +574,6 @@ section.carousel {
     -webkit-tap-highlight-color: transparent; }
     section.carousel li.offer:hover {
       background-position: 45%; }
-    @media screen and (max-width: 640px) {
-      section.carousel li.offer {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-                flex-direction: column; } }
   section.carousel p.title {
     color: #fff;
     font-size: 3.5vw;
