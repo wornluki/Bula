@@ -4,18 +4,15 @@ section.menu
 	height: 100%
 	position: relative
 
-
 	.list
 		padding: 0
 		margin: 0
-		display: flex
-		//transform: translateY(100px)
 		justify-content: space-around
 		transform: scaleY(0)
 		transform-origin: top
+		display: flex
 		width: 100%
 		position: absolute
-		//opacity: 0
 		+transition(all 200ms ease-in-out)
 
 		&.bula_menu
@@ -33,6 +30,7 @@ section.menu
 		&.toggle
 			transform: scaleY(1)
 			position: relative
+			//display: flex
 
 	ul
 		margin: 0
